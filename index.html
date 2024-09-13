@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Cypher: Uma Aventura Tecnologica</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <p>Você acorda de repente em uma sala vazia e escura, a única coisa que você vê é uma porta a sua frente</p>
+            <button class="btn-proximo" data-proximo="1">Abrir a porta</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Do outro lado, você vê uma sala imensa e extensa cheia de servidores. Luzes de LED piscando para todo lado. Suas únicas opções são uma mesa à sua direita e uma porta vermelha mais à frente.</p>
+            <button class="btn-proximo" data-proximo="2">Investigar a mesa</button>
+            <button class="btn-proximo" data-proximo="3">Abrir a outra porta</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Na mesa, você vê uma folha com uma mensagem e um estranho botão ao lado.</p>
+            <button class="btn-proximo" data-proximo="4">Ler a folha</button>
+            <button class="btn-proximo" data-proximo="5">Apertar o botão</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>"Você não deveria ter aberto essa porta" - Você caiu na armadilha!</p>
+            <button class="btn-proximo" data-proximo="0">Reiniciar</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <p>A folha diz: "Jamais abra a porta vermelha!"</p>
+            <button class="btn-proximo" data-proximo="2">Voltar</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Apertando o botão, a parede ao seu lado começa a se mover, abrindo uma porta secreta. Você sabe o que fazer.</p>
+            <button class="btn-proximo" data-proximo="6">Entrar na parede</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Entrando na parede, ela se move novamente, agora te deixando sem volta. Você vê uma folha na parede e um corredor escuro.</p>
+            <button class="btn-proximo" data-proximo="7">Ler a folha</button>
+            <button class="btn-proximo" data-proximo="8">Cruzar o corredor</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>A folha diz: "Quando o contador você ver, jamais pense em correr. Sua única saída é sentar-se em calmaria"</p>
+            <button class="btn-proximo" data-proximo="6">Voltar</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>No meio do caminho pelo corredor, de repente, as luzes se apagam. e um contador aparece no teto. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="9">Correr antes que o tempo acabe</button>
+            <button class="btn-proximo" data-proximo="10">Sentar e ficar calmo</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Você corre, mas não por muito tempo, o chão se abre e você cai na armadilha.</p>
+            <button class="btn-proximo" data-proximo="0">Reiniciar</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Você se senta e relaxa. Alguns segundos se passam e o chão se abre. Tudo escurece mais ainda. Você acorda na rua, deitado em um beco no bairro de casa. Você escapou.</p>
+            <button class="btn-proximo" data-proximo="0">Jogar novamente</button>
+            <button class="btn-proximo" data-proximo="11">Bônus!!!</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <p>Jogo feito por Matheus Faria Hanzoi durante o curso de programação da Alura. Considere dar uma olhada no meu <a href="https://github.com/Inde13">Github</a></p>
+            <button class="btn-proximo" data-proximo="0">Voltar ao início</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
